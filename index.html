@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Labrador Keek</title>
+    <style>
+      body {
+        background: linear-gradient(
+          93.1deg,
+          rgb(238, 254, 183) 19.1%,
+          rgb(169, 254, 222) 53.9%,
+          rgb(90, 222, 255) 92%
+        );
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+
+        color: yellow;
+        background: black;
+        font-size: 18px;
+        border: 2px solid yellow;
+        border-radius: 20px;
+        padding: 15px 25px;
+      }
+
+      button:hover {
+        background: yellow;
+        color: black;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        background-color: lightgoldenrodyellow;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 20px auto;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      .theme-button {
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        padding: 5 8px;
+        border: 2px solid gray;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .labrador-intro-picture {
+        border-radius: 20px;
+        transition: all 200ms ease-in-out;
+      }
+      .labrador-intro-picture:hover {
+        filter: contrast(60%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark Theme</button>
+
+    <div class="container">
+      <h1>My Labrador Keek 🐶</h1>
+      <h2>My Favourite dog</h2>
+
+      <a
+        href="https://www.yourdog.co.uk/dog-breeds/labrador-retriever-dog-breed-profile/"
+        target="_blank"
+      >
+        <img
+        src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/198/original/Kiki_1.jpg?1698497357
+        alt="" class="labrador-intro-picture" />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/204/original/kiki_5.jpg?1698497614"
+          alt=""
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/203/original/kiki_4.jpg?1698497607"
+          alt=""
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/201/original/kiki_2.jpg?1698497595"
+          alt=""
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/200/original/kiki_7.jpg?1698497559"
+          alt=""
+        />
+      </div>
+      <p>
+        The Labrador Retriever, or simply Labrador, is a British breed of
+        retriever gun dog. It was developed in the United Kingdom from fishing
+        dogs imported from the colony of Newfoundland (now a province of
+        Canada), and was named after the Labrador region of that colony. It is
+        among the most commonly kept dogs in several countries, particularly in
+        the European world. The Labrador is friendly, energetic, and playful.[2]
+        It was bred as a sporting and hunting dog but is widely kept as a
+        companion dog. It may also be trained as a guide or assistance dog, or
+        for rescue or therapy work. Working Labs are more energetic than
+        show-bred Labs and tend to be of slighter build; show Labs are more
+        stocky. While working Labs are often cheaper, it's important to remember
+        that it's best not to choose a working Lab unless you intend to exercise
+        them alot 💖
+      </p>
+
+      <a
+        href="https://www.thelabradorsite.com/labrador-training/"
+        target="_blank"
+      >
+        <button>Learn about Labradors</button>
+      </a>
+    </div>
+    <footer>Coded with 💖 ❤️ 💖 by Sam Wright</footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
